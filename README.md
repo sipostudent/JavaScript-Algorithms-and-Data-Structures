@@ -3,7 +3,7 @@
   <img src="img/js_algorithms_&_data_structures.png" width="600">
   <br>
     <br>
-  JavaScript Algorithms and Data Structures
+  JavaScript - Algorithms and Data Structures
   <br>
 </h1>
 
