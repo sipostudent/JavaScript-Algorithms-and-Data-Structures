@@ -9,4 +9,4 @@
 
 <h3 align="center">Self-Taught Programming</h3>
 
-<h4 align="center">Variables, Arrays, Create Functions, Various Loop Types, and Multiple Algorithm Creation Challenges</h4>
+<h4 align="center">Variables, Arrays, Create Functions, Various Loop Types, and Multiple Algorithm Creation Challenges.</h4>
