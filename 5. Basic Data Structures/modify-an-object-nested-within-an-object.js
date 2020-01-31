@@ -44,10 +44,14 @@ let userActivity = {
   }
 };
 
+// Dot notataion solution
 userActivity.data.online = 45;
+
+// Bracket notatation solution (alternative)
+// userActivity["data"] ["online"] = 45;
 
 // change code below this line
 
 // change code above this line
 
-console.log(userActivity.data.online);
+console.log(userActivity.data.online); 
