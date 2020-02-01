@@ -17,11 +17,25 @@
     Celsius temperature to Fahrenheit.
 */
 
+/*  Challenge Solution
+    ------------------
+*/
+
+// function convertToF(celsius) {
+//   let fahrenheit = (celsius * 9/5) + 32;
+//   return fahrenheit;
+// }
+
+// let temp = convertToF(30);
+
+// console.log(temp)
+
+/*  Challenge Solution (Refactored)
+    -------------------------------
+*/
+
 function convertToF(celsius) {
-  let fahrenheit = (celsius * 9/5) + 32;
-  return fahrenheit;
+  return (celsius * 9/5) + 32;
 }
 
-let temp = convertToF(30);
-
-console.log(temp)
+console.log(convertToF(30));
