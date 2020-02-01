@@ -29,7 +29,7 @@
 
 /*
     Challenge Solution (using Algorithm Scripting)
-    ------------------------------------------------
+    ----------------------------------------------
 */
 
 function reverseString(str) {
