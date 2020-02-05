@@ -25,8 +25,7 @@
     Expected Result
     ---------------
 
-    frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2)
-    should return ["head", "shoulders", "claw", "tentacle", "knees", "toes"].
+    frankenSplice([1, 2, 3], [4, 5], 1) should return [4, 1, 2, 3, 5].
 */
 
 /*
@@ -35,13 +34,14 @@
 */
 
 function frankenSplice(arr1, arr2, n) {
-  let result = [];
+  let resultArray = [];
 
-  result.push(...arr2.slice(0, n));
-  result.push(...arr1);
-  result.push(...arr2.slice(n, arr2.length));
+  resultArray.push(...arr2.slice(0, n));
+  resultArray.push(...arr1);
+  resultArray.push(...arr2.slice(n, arr2.length));
 
-  return result;
+  return resultArray;
 }
 
-console.log(frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2));
+console.log(frankenSplice([1, 2, 3], [4, 5], 1));
+
