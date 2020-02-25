@@ -4,67 +4,55 @@
 */
 
 /*
-    Use a Constructor to Create Objects
+    Understand the Constructor Property
     -----------------------------------
 
-    
-    Here's the Bird constructor from the previous challenge:
+    There is a special constructor property located on the object instances 
+    duck and beagle that were created in the previous challenges:
 
-        function Bird() {
-        this.name = "Albert";
-        this.color  = "blue";
-        this.numLegs = 2;
-        // "this" inside the constructor always refers to the object being created
+        let duck = new Bird();
+        let beagle = new Dog();
+
+    console.log(duck.constructor === Bird); //prints true
+    console.log(beagle.constructor === Dog); //prints true
+
+    Note that the constructor property is a reference to the constructor
+    function that created the instance.The advantage of the constructor property 
+    is that it 's possible to check for this property to find out what kind of object it is. 
+    Here's an example of how this could be used:
+
+        function joinBirdFraternity(candidate) {
+            if (candidate.constructor === Bird) {
+                return true;
+            } else {
+                return false;
+            }
         }
 
-        let blueBird = new Bird();
-
-    Notice that the new operator is used when calling a 
-    constructor. This tells JavaScript to create a new instance 
-    of Bird called blueBird. Without the new operator, this inside 
-    the constructor would not point to the newly created object, 
-    giving unexpected results. Now blueBird has all the properties 
-    defined inside the Bird constructor:
-
-    blueBird.name; // => Albert
-    blueBird.color; // => blue
-    blueBird.numLegs; // => 2
-
-    Just like any other object, its properties can be accessed 
-    and modified:
-
-    blueBird.name = 'Elvira';
-    blueBird.name; // => Elvira
-
-
-    Challenge
-    ---------
-
-    Use the Dog constructor from the last lesson to create a new 
-    instance of Dog, assigning it to a variable hound.
-
-
-    Expected Results
-    ----------------
-
-    hound should be created using the Dog constructor.
-
-    Your code should use the new operator to create an instance of Dog.
+    Note:-
+    Since the constructor property can be overwritten(which will be covered in the 
+    next two challenges) it’ s generally better to use the instanceof method to 
+    check the type of an object.
 */
 
 /*
 
-    Challenge Solution
-    ------------------
+    Challenge
+    ---------
+
+    Write a joinDogFraternity function that takes a candidate parameter and, using the 
+    constructor property, return true if the candidate is a Dog, otherwise return false.
 */
 
-function Dog() {
-    this.name = "Rupert";
-    this.color = "brown";
-    this.numLegs = 4;
+function Dog(name) {
+    this.name = name;
 }
+
 // Add your code below this line
-
-let hound = new Dog();
-
-console.log(Dog);
+function joinDogFraternity(candidate) {
+    if (candidate.constructor === Dog) {
+        return true;
+    } else {
+        return false;
+    }
+}
