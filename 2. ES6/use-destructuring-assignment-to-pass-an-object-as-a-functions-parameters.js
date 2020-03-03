@@ -4,7 +4,7 @@
 */
 
 /*
-    Use Destructuring Assignment to Pass an Object as a Function 's Parameters
+    Use Destructuring Assignment to Pass an Object as a Functions Parameters
     --------------------------------------------------------------------------
 
     In some cases, you can destructure the object in a
